@@ -93,6 +93,17 @@ Public packaging for directories (the server itself runs on
 The plugin is free to install. You need an Ody account and API key to use the
 server (7-day free trial on every plan).
 
+## Glama / Docker
+
+Open-source packaging for [Glama](https://glama.ai/mcp/servers/CosmicHero2/ody-mcp) health checks:
+
+```bash
+docker build -t ody-mcp .
+docker run -i --rm -e ODY_API_KEY=ody_test_… ody-mcp
+```
+
+Without `ODY_API_KEY` the bridge still starts and answers `initialize` / `tools/list` (one configure tip tool). Prefer the hosted URL for real clients.
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).

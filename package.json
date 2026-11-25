@@ -1,0 +1,20 @@
+{
+  "name": "ody-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "mcpName": "co.ody/ody",
+  "description": "Stdio bridge to Ody's hosted MCP server (for Glama / local clients).",
+  "bin": {
+    "ody-mcp": "./bridge/index.js"
+  },
+  "scripts": {
+    "start": "node bridge/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  }
+}
