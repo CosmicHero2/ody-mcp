@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ody": {
+      "url": "https://api.ody.co/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ODY_API_KEY}"
+      }
+    }
+  }
+}

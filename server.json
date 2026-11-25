@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "co.ody/ody",
+  "title": "Ody",
+  "description": "AI business phone MCP: inbox, SMS, numbers, Astra agent, knowledge base.",
+  "version": "1.0.0",
+  "websiteUrl": "https://ody.co",
+  "repository": {
+    "url": "https://github.com/CosmicHero2/ody-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/CosmicHero2/ody-mcp/main/assets/logo.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ody.co/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token. Value must be 'Bearer ody_live_…' or 'Bearer ody_test_…' from Build → API keys.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

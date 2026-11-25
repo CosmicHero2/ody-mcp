@@ -1,0 +1,33 @@
+{
+  "name": "ody",
+  "description": "Ody AI business phone for Cursor: manage the shared inbox, send texts, buy numbers, configure Astra, and work the knowledge base through the hosted MCP server.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ody",
+    "email": "support@ody.co"
+  },
+  "homepage": "https://dev.ody.co/mcp/overview",
+  "repository": "https://github.com/CosmicHero2/ody-mcp",
+  "license": "MIT",
+  "keywords": [
+    "ody",
+    "business-phone",
+    "sms",
+    "voip",
+    "ai-agent",
+    "mcp",
+    "astra"
+  ],
+  "logo": "assets/logo.png",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ODY_API_KEY": {
+        "type": "string",
+        "title": "Ody API key",
+        "description": "Create a key in Build → API keys at https://app.ody.co/build/api-keys. Use ody_test_… to rehearse without sending real texts."
+      }
+    },
+    "required": ["ODY_API_KEY"]
+  }
+}
